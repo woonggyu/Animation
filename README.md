@@ -4,13 +4,14 @@ animation project
 Ani-Buddy: AI 기반 애니메이션 추천 서비스
 사용자의 취향을 분석하고 RAG 기반 챗봇을 통해 정확한 애니메이션 정보를 제공하는 풀스택 웹 서비스입니다.
 
-1. 프로젝트 소개
+# 1프로젝트 소개
+```
 개요: LLM의 환각 현상을 방지하기 위해 RAG(Retrieval-Augmented Generation) 기술을 도입한 애니메이션 추천 서비스입니다.
 
 핵심 기능: 사용자와의 질문 게임을 통해 취향을 파악하고, 최적의 TOP 3 추천 리스트를 생성합니다.
 
 구조: React(프론트), Spring Boot(메인 백엔드), Flask(AI 서버)를 유기적으로 연결한 마이크로서비스 아키텍처를 지향합니다.
-
+```
 
 # 2프로젝트 구조
 ```
@@ -58,6 +59,35 @@ Library: Scikit-learn (TF-IDF 벡터화), Flask-CORS
 ```
 
 # 5 db구조
+```
+1) ANIME Table (애니메이션 기본 정보)
+
+작품의 메타데이터를 저장하며, AI 서버에서 RAG 검색을 수행할 때 원천 데이터로 활용됩니다.
+
+NUM: 작품 고유 번호 (Primary Key)
+
+TITLE: 애니메이션 제목
+
+GENRE: 장르 (액션, 로맨스, 판타지 등)
+
+RATING: 작품 평점
+
+DESCRIPTION: 상세 줄거리 (AI 분석 및 답변 생성용 핵심 데이터)
+
+2) COMMENTS Table (사용자 후기 및 대화 기록)
+
+특정 작품에 대해 사용자들이 남긴 피드백을 저장하며, ANIME 테이블과 연동됩니다.
+
+CNO: 댓글 고유 식별 번호 (Primary Key)
+
+NUM: 애니메이션 고유 번호 (Foreign Key) - ANIME 테이블의 NUM과 연결
+
+ID: 작성자 닉네임 또는 아이디
+
+CONTENT: 후기 및 댓글 내용
+
+REGDATE: 데이터 등록 일자
+```
 
 
 # 6 문제점 및 해결방안

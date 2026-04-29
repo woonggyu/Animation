@@ -63,10 +63,15 @@ MySQL, CSV
 
 3.풀스택 API 연동: Axios를 이용해 React - Spring Boot - Flask 간의 실시간 데이터 통신을 구현했습니다.
 ```
+<img width="2557" height="1337" alt="Image" src="https://github.com/user-attachments/assets/998009e4-4bdf-4a8c-a8f0-8d264099ff3b" />
 
+<img width="1239" height="501" alt="Image" src="https://github.com/user-attachments/assets/d098ffdd-8c36-4962-bee4-f16e0a48f55e" />
 
+<img width="2544" height="1301" alt="Image" src="https://github.com/user-attachments/assets/caa5112f-a369-46fe-9308-2a519a8b755e" />
 
+<img width="1191" height="1263" alt="Image" src="https://github.com/user-attachments/assets/b469b483-cee9-4246-b757-6787b60956c8" />
 
+<img width="392" height="677" alt="Image" src="https://github.com/user-attachments/assets/6b1f82c5-8742-41e7-a0a1-9b470a4e3852" />
 
 # 5.db구조
 ```

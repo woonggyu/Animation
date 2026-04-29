@@ -41,11 +41,17 @@ Ani-recommend
 # 3기술스택
 
 ```
-Frontend: React, Vite, Axios
-Backend (Web): Java 17, Spring Boot 3.x, Spring Data JPA
-Backend (AI): Python 3.10, Flask, Ollama (Llama3)
-Database: MySQL, CSV (애니메이션 원천 데이터)
-Library: Scikit-learn (TF-IDF 벡터화), Flask-CORS
+Frontend
+React, Vite, Axios
+
+Backend
+Java 17, Spring Boot 3.x, Spring Data JPA
+
+AI & Data Analysis
+Python 3.12, Ollama (Llama3), Pandas, Scikit-learn
+
+Database
+MySQL, CSV
 ```
 
 
@@ -57,6 +63,10 @@ Library: Scikit-learn (TF-IDF 벡터화), Flask-CORS
 
 3.풀스택 API 연동: Axios를 이용해 React - Spring Boot - Flask 간의 실시간 데이터 통신을 구현했습니다.
 ```
+
+
+
+
 
 # 5 db구조
 ```

@@ -4,7 +4,7 @@ animation project
 Ani-Buddy: AI 기반 애니메이션 추천 서비스
 사용자의 취향을 분석하고 RAG 기반 챗봇을 통해 정확한 애니메이션 정보를 제공하는 풀스택 웹 서비스입니다.
 
-# 1프로젝트 소개
+# 1.프로젝트 소개
 ```
 개요: LLM의 환각 현상을 방지하기 위해 RAG(Retrieval-Augmented Generation) 기술을 도입한 애니메이션 추천 서비스입니다.
 
@@ -13,7 +13,7 @@ Ani-Buddy: AI 기반 애니메이션 추천 서비스
 구조: React(프론트), Spring Boot(메인 백엔드), Flask(AI 서버)를 유기적으로 연결한 마이크로서비스 아키텍처를 지향합니다.
 ```
 
-# 2프로젝트 구조
+# 2.프로젝트 구조
 ```
 Ani-recommend
 ├── frontend/ (React + Vite)
@@ -38,7 +38,7 @@ Ani-recommend
 
 ```
 
-# 3기술스택
+# 3.기술스택
 
 ```
 Frontend
@@ -55,7 +55,7 @@ MySQL, CSV
 ```
 
 
-# 4주요기능
+# 4.주요기능
 ```
 1.취향 분석 질문 게임: 가벼운 문답을 통해 사용자의 선호 장르와 스타일을 분석하여 TOP 3 애니메이션을 추천합니다.
 
@@ -68,7 +68,7 @@ MySQL, CSV
 
 
 
-# 5 db구조
+# 5.db구조
 ```
 1) ANIME Table (애니메이션 기본 정보)
 
@@ -100,7 +100,7 @@ REGDATE: 데이터 등록 일자
 ```
 
 
-# 6 문제점 및 해결방안
+# 6.문제점 및 해결방안
 ```
 문제점 및 해결 방안
 문제 1: 서로 다른 서버 간 통신 (CORS)
@@ -111,7 +111,7 @@ REGDATE: 데이터 등록 일자
 현상: Java와 Python 간 JSON 데이터 규격이 달라 데이터가 깨지는 현상.
 해결: 표준 DTO 규격을 정의하고 JSON 포맷을 통일하여 무결성 확보.
 ```
-# 7실행방법
+# 7.실행방법
 ```
 AI Server: cd backend-ai -> pip install -r requirements.txt -> python app.py
 
